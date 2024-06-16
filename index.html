@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz de vialidad - Grupo 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nobile:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="default-navbar">
+        <div>
+          <a href="/TPI-Grupo-2/"
+            ><button type="button" class="text-button">Inicio</button></a
+          >
+          <a href="/TPI-Grupo-2/group/index.html"
+            ><button type="button" class="text-button">Equipo</button></a
+          >
+          <a href="/TPI-Grupo-2/progress/index.html"
+            ><button type="button" class="text-button">Avances</button></a
+          >
+          <a href="/TPI-Grupo-2/games/index.html"
+            ><button type="button" class="blue-button">Juegos</button></a
+          >
+        </div>
+      </nav>
+    </header>
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <div id="app">
+      <h1>
+        ¡Bienvenido a nuestro cuestionario didáctico!<br />¡Haz clic en el botón
+        para empezar el juego!
+      </h1>
+    </div>
+    <div class="container">
+      <button id="startButton">Empezar el juego</button>
+      <div>
+        <h1 id="questionText">
+          En base a la imagen de la izquierda, elija la mejor opción de la
+          derecha
+        </h1>
+      </div>
+      <div id="gameArea" style="display: none">
+        <div class="left">
+          <img id="mainImage" src="" alt="Main Image" />
+        </div>
+        <div class="right">
+          <button class="imageButton" id="option1">
+            <img src="" alt="Option 1" />
+          </button>
+          <button class="imageButton" id="option2">
+            <img src="" alt="Option 2" />
+          </button>
+        </div>
+      </div>
+
+      <div id="scoreBoard" style="display: none">Puntuación: 0</div>
+      <div id="timer" style="display: none">Tiempo: 30</div>
+    </div>
+    <div id="Instrucciones">
+      <h1>Instrucciones del juego</h1>
+      <p>En este juego didáctico, el usuario será presentado con una imagen grande a la izquierda, que representará una situación determinada, 
+        y a su derecha se presentarán dos imagenes más chicas que serviran como opción 1 y 2. <br> El usuario dispondrá de un límite de tiempo de 30 segundos para completar
+        el cuestionario de 5 preguntas. <br> Si el usuario logra acumular al menos 3 puntos, gana el juego. <br> Mucha suerte!
+      </p>
+    </div>
+    <script type="module" src="./index.js"></script>
+    <footer class="default-footer">
+      <p class="footer-text">
+        Derechos reservados - Sitio desarrollado para uso educativo - Diseño y
+        desarrollo Web - Grupo 2 - UADE - 2024
+      </p>
+    </footer>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="/src/Games/Game2/styles.css" />
+  </head>
+  <body></body>
+</html>
